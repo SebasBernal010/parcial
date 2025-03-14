@@ -4,8 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .img_nar {
+            max-width: 50%; /* Ajusta el tamaño de la imagen */
+            flex-shrink: 0;
+        }
+
+        .texto {
+            max-width: 45%; /* Ajusta el ancho del texto */
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* En pantallas más pequeñas, se apilan */
+                text-align: center;
+            }
+
+            .img_nar, .texto {
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Sur Occidente Colombiano</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="nariño.html">Nariño</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="valle.html">Valle</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="cauca.html">Cauca</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="img_nar">
+            <img src="img/SUROCCIDENTE.jpg" alt="Nariño" class="img-fluid">
+        </div>
+
+        <div class="texto">
+            <p>El Sur Occidente colombiano integra los departamentos de Valle del Cauca, Cauca y Nariño
+                . Esta región se ha caracterizado por la conjugación
+                del accionar de los diferentes actores armados que hacen presencia
+                y se disputan los territorios (agentes estatales, paramilitares e insurgentes), motivados por intereses geoestratégicos
+                sobre el Puerto de Buenaventura, la salida hacia al pacífico y hacia el Ecuador.
+                También hacia las riquezas naturales,
+                minerales y los yacimientos de hidrocarburos que posee la zona.</p>
+                <br>
+                <p>La implementación de megaproyectos como parte de las apuestas por el desarrollo económico del país,
+                    se está dando cada vez con mayor fuerza en territorios de titulación colectiva en donde habita población afrocolombiana. 
+                </p>
+        </div>
+
+        
+    </div>
 </body>
 </html>
